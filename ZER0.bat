@@ -16,18 +16,19 @@ set grey=[38;5;238m
 set r=[0m
 set -=%blue%-%white%
 
+
 :: Removed auth
 
+
 :success
-del /f /q %temp%\auth.txt >nul 2>&1
 cls
 echo [%green%+%white%] Authenticated
-timeout /t 3 >nul
+timeout /t 3 /nobreak >nul
 goto epic
 
 :epic
 cls
-mode 90,35
+mode 90, 35
 chcp 65001 >nul
 echo.
 echo.
@@ -46,6 +47,7 @@ echo              %blue%║%white% [%-%] Created By %blue%Buxh%white%           
 echo              %blue%║%white% [%-%] Make a system %blue%restore point %blue%║%white% [%blue%5%white%] Scan Vulnerabilities   %blue%║%white%
 echo %blue%             ╚═════════════════════════════════╩════════════════════════════╝
 echo %grey%                                     Licensed to %username% %blue%%r%%blue%
+
 
 set /p choose=" > %white%"
 if /i "%choose%"=="1" (goto A)
