@@ -2,9 +2,7 @@
 mode 90,35
 title ZER0 OPTIMIZER
 if not "%1"=="am_admin" (powershell start -verb runas '%0' am_admin & exit /b)
-
-
-
+:: ------------------------------------------------------------------------------------------------------------------------------
 :variables
 set green=[0;32m
 set red=[0;31m
@@ -15,17 +13,15 @@ set blue=[96m
 set grey=[38;5;238m
 set r=[0m
 set -=%blue%-%white%
-
-
-:: Removed auth
-
-
+:: ------------------------------------------------------------------------------------------------------------------------------
+:: Removed auth u can make ur own
+:: ------------------------------------------------------------------------------------------------------------------------------
 :success
 cls
 echo [%green%+%white%] Authenticated
 timeout /t 3 /nobreak >nul
 goto epic
-
+:: ------------------------------------------------------------------------------------------------------------------------------
 :epic
 cls
 mode 90, 35
@@ -47,15 +43,14 @@ echo              %blue%║%white% [%-%] Created By %blue%Buxh%white%           
 echo              %blue%║%white% [%-%] Make a system %blue%restore point %blue%║%white% [%blue%5%white%] Scan Vulnerabilities   %blue%║%white%
 echo %blue%             ╚═════════════════════════════════╩════════════════════════════╝
 echo %grey%                                     Licensed to %username% %blue%%r%%blue%
-
-
+:: ------------------------------------------------------------------------------------------------------------------------------
 set /p choose=" > %white%"
 if /i "%choose%"=="1" (goto A)
 if /i "%choose%"=="2" (goto B)
 if /i "%choose%"=="3" (goto C)
 if /i "%choose%"=="4" (goto D)
 if /i "%choose%"=="5" (goto E)
-
+:: ------------------------------------------------------------------------------------------------------------------------------
 :A
 wmic process where name="javaw.exe" CALL setpriority "realtime" >nul
 wmic process where name="svchost.exe" CALL setpriority "realtime" >nul
@@ -207,8 +202,7 @@ if exist "%tmpmsgbox%" del /f /q "%tmpmsgbox%"
 echo msgbox "%msgboxBody%",0,"%msgboxTitle%">"%tmpmsgbox%"
 wscript "%tmpmsgbox%"
 goto epic
-
-
+:: ------------------------------------------------------------------------------------------------------------------------------
 :B
 curl -s https://cdn.discordapp.com/attachments/856954280954691595/860270532108877844/ZER0.pow > "%temp%\ZER0.pow"
 if not exist "%temp%\ZER0.pow" goto check10
@@ -680,9 +674,7 @@ if exist "%tmpmsgbox%" del /f /q "%tmpmsgbox%"
 echo msgbox "%msgboxBody%",0,"%msgboxTitle%">"%tmpmsgbox%"
 wscript "%tmpmsgbox%"
 goto epic
-
-
-
+:: ------------------------------------------------------------------------------------------------------------------------------
 :C
 del /s /f /q C:\windows\temp\*.tmp >nul 2>&1
 del /s /f /q C:\windows\prefetch\*.* >nul 2>&1
@@ -912,9 +904,7 @@ if exist "%tmpmsgbox%" del /f /q "%tmpmsgbox%"
 echo msgbox "%msgboxBody%",0,"%msgboxTitle%">"%tmpmsgbox%"
 wscript "%tmpmsgbox%"
 goto epic
-
-
-
+:: ------------------------------------------------------------------------------------------------------------------------------
 :D
 
 Reg.exe add "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "MaxConnectionsPer1_0Server" /t REG_DWORD /d "16" /f                                                                                                                                                                    >nul 2>&1
@@ -1166,10 +1156,7 @@ if exist "%tmpmsgbox%" del /f /q "%tmpmsgbox%"
 echo msgbox "%msgboxBody%",0,"%msgboxTitle%">"%tmpmsgbox%"
 wscript "%tmpmsgbox%"
 goto epic
-
-
-
-
+:: -----------------------------------------------------------------------------------------------------------------------------
 :E
 echo.
 echo                            Scanning System, this may take some time.
