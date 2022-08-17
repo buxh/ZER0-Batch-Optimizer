@@ -1,8 +1,11 @@
-# ZER0-Batch-Optimizer
+<p align="center">
+   <img src="https://raw.githubusercontent.com/buxh/ZER0-Batch-Optimizer/main/image/z1.png">
+</p> 
 
-Run the batch file as administrator then type the number correlating to the optimization and press enter. It will do all the work for you.
-
-Any issues at all feel free to message me on discord: **paid#1337**
-
-### todo:
- - [ ] Make this readme look better
+<p align="center">
+	<a href="https://github.com/hellzerg/optimizer/releases/download/13.7/Optimizer-13.7.exe" target="_blank">
+		<img src="https://raw.githubusercontent.com/buxh/ZER0-Batch-Optimizer/main/image/download-button.png">
+		<br>
+		<img src="https://raw.githubusercontent.com/hellzerg/optimizer/master/flags.png">
+	</a>
+</p> 
