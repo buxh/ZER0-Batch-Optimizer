@@ -11,4 +11,4 @@
 </p> 
 
 ## Credits
-I stole the read me format from [this repo](https://github.com/hellzerg/optimizer)
+I stole the readme format from [this repo](https://github.com/hellzerg/optimizer)
