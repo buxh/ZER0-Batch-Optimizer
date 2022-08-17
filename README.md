@@ -9,3 +9,6 @@
 		<img src="https://raw.githubusercontent.com/hellzerg/optimizer/master/flags.png">
 	</a>
 </p> 
+
+## Credits
+I stole the read me format from [this repo](https://github.com/hellzerg/optimizer)
