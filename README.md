@@ -4,5 +4,5 @@ Run the batch file as administrator then type the number correlating to the opti
 
 Any issues at all feel free to message me on discord: **paid#1337**
 
-todo
+### todo:
  - [ ] Make this readme look better
